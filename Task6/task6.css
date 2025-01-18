@@ -1,0 +1,52 @@
+.pink{
+    color: pink;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.size-3rem{
+    font-size: 3rem;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.container{
+    max-width: 50%;
+    border: 1px solid rgb(180, 180, 180);
+    padding: 0 20px;
+}
+
+.container > h1{
+    height: 40px;
+    padding: 20px;
+}
+
+.white{
+    color: white;
+}
+
+.bg-image-1 {
+    background-image: url("/Solve_HTML_CSS_Task/material/task8four.jpg");
+    background-size: cover;
+}
+
+.bg-image-2{
+    background-image: url("/Solve_HTML_CSS_Task/material/tiger.jpg");
+    background-repeat: repeat-y;
+}
+
+.color-1{
+    color: rgb(28 135 201);
+}

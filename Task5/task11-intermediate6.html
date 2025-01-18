@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: cursive;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #f3f3f3;
+            height: 100vh;
+            background-color: rgb(84 84 150);
+        }
+
+        h1 {
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            border: none;
+        }
+
+        .container {
+            margin-top: 3.2rem;
+            max-width: 800px;
+        }
+
+        .header {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        span {
+            margin-left: 0.2rem;
+            font-size: 0.9rem;
+            color: #e4e4e4;
+        }
+
+        /* form */
+
+        form {
+            background: rgba(27, 27, 50, 0.8);
+            padding: 2.5rem 1.2rem;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+            overflow: hidden;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        .input-radio,
+        .input-checkbox {
+            margin-right: 0.625rem;
+            min-height: 1.25rem;
+            min-width: 1.25rem;
+        }
+
+        textarea {
+            min-height: 120px;
+            width: 100%;
+            padding: 0.625rem;
+            resize: vertical;
+            font-size: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background: #37af65;
+            color: inherit;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        input, select{
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" >Amman Coding Academy Survey Form</h1>
+          <p>
+            <i>Thank you for taking the time to help</i>
+          </p>
+        </header>
+        <form>
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+          </div>
+          
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email">
+          </div>
+          
+          <div class="form-group">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+          </div>
+          
+          <div class="form-group">
+            <p>How did you like my survey</p>
+            <select class="form-control">
+              <option selected="">How did you like my survey</option>
+              <option value="yes">I like it so much</option>
+              <option value="no">not so much</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <p>Would you recommend my pen to a friend?</p>
+            <label>
+              <input name="recommendation" value="definitely" type="radio" class="input-radio" checked="">Definitely
+            </label>
+            <label>
+              <input name="recommendation" value="maybe" type="radio" class="input-radio">Maybe
+            </label>
+            <label>
+                <input name="recommendation" value="not-sure" type="radio" class="input-radio">Not sure
+            </label>
+          </div>
+  
+          <div class="form-group">
+            <p>What is your favorite feature of codepen?</p>
+            
+            <select name="mostLike" class="form-control" required="">
+              <option selected>Select an option</option>
+              <option value="projects">Projects</option>
+              <option value="openSource">Open Source</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <p>
+              What would you like to see improved in my survey? (Check all that apply)
+            </p>
+  
+            <label>
+                <input name="CSS" value="CSS" type="checkbox" class="input-checkbox">CSS needs to be more complex
+            </label>
+            <label>
+                <input name="javascript" value="javascript" type="checkbox" class="input-checkbox">Use some javascript
+            </label>
+            <label>
+                <input name="no-changes" value="no-changes" type="checkbox" class="input-checkbox">NO changes required
+            </label>
+          </div>
+  
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+  
+          <div class="form-group">
+            <button type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
