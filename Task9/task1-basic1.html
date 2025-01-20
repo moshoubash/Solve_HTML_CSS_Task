@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            padding:10px;
+        }
+        .one{
+            border: 1px solid black;
+            position: relative;
+            width: 90%;
+            height: 100px;
+        }
+
+        .two{
+            background-color: rgb(0 0 255);
+            color: white;
+            position: fixed;
+            top: 180px;
+            left: 30px;
+            z-index: 1;
+            width: 90%;
+            height: 100px;
+        }
+
+        .three{
+            background-color: rgb(144 238 144);
+            color: black;
+            position: absolute;
+            top: 70px;
+            left: 300px;
+            width: 500px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This your first position & Z-index task</h1>
+    <div class="one">Div1 positions-Relative</div>
+    <div class="two">Div2 position-fixed & z-index</div>
+    <div class="three">Div3 position-absolute</div>
+</body>
+</html>
