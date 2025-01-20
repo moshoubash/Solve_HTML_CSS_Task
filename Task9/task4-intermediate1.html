@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(241 245 249);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            max-width: 430px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container div{
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            color: white;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .static{
+            position: static;
+        }
+
+        .relative{
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        .red{
+            background-color: rgb(251 113 133);
+        }
+
+        .blue{
+            background-color: rgb(56 189 248);
+        }
+
+        .yellow{
+            background-color: rgb(250 204 21);
+        }
+
+        .purble{
+            background-color: rgb(167 139 250);
+        }
+            
+        .pink{
+            background-color: rgb(244 114 182);
+        }
+
+        .green{
+            background-color: rgb(74 222 128);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red relative">1</div>
+        <div class="blue static">2</div>
+        <div class="yellow static">3</div>
+        <div class="green static">4</div>
+        <div class="purble static">5</div>
+        <div class="pink static">6</div>
+        <div class="red static">7</div>
+        <div class="blue static">8</div>
+        <div class="green static">9</div>
+        <div class="yellow static">10</div>
+        <div class="purble static">11</div>
+        <div class="pink static">12</div>
+    </div>
+</body>
+</html>
