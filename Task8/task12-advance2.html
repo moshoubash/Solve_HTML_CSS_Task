@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/d890c03bb3.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+        }
+
+        .left, .right, .center{
+            display: flex;
+        }
+
+        .search{
+            margin-right: 0;
+        }
+
+        .search .glass{
+            margin-right: 10px;
+            border-radius: 0 20px 20px 0;
+            padding: 10px 20px;
+            border: 1px solid rgb(199, 199, 199);
+        }
+
+        .search input{
+            padding: 10px 20px;
+            width: 300px;
+            border-radius: 20px 0 0 20px;
+            border: 1px solid rgb(199, 199, 199);
+        }
+
+        .list-btn{
+            background-color: transparent;
+            font-size: 1.2rem;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .right{
+            background-color: none;
+        }
+
+        .bell{
+            margin: 0 20px;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .create{
+            border-radius: 20px;
+            border: none;
+            padding: 0px 20px;
+        }
+
+        .glass, .micro, .create{
+            background-color: #f2f2f2;
+        }
+
+        .micro{
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .categories{
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .categories a{
+            padding: 10px 20px;
+            font-size: .8rem;
+            color: black;
+            text-decoration: none;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            margin: 5px 2px;
+        }
+
+        .container{
+            padding: 20px 80px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            width: fit-content;
+            margin: 20px;
+        }
+        .card img{
+            border-radius: 10px;
+        }
+
+        .card-body{
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .card-body img{
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+
+        .title{
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .channel{
+            color: gray;
+            margin: 1px 0;
+            font-size: 13px;
+        }
+
+        .views-and-time{
+            color: gray;
+            font-size: 13px;
+        }
+
+        .check{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <button class="list-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <img src="../material/Youtubelogo.png" width="80px" alt="Youtube logo">
+        </div>
+
+        <div class="center">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button class="glass"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button class="micro"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+
+        <div class="right">
+            <button class="create"><i class="fa-solid fa-plus"></i> Create</button>
+            <button class="bell"><i class="fa-regular fa-bell"></i></button>
+            <img src="../material/css3.png" width="40px" height="40px" alt="">
+        </div>
+    </nav>
+
+    <div class="categories">
+        <a href="#">All</a>
+        <a href="#">Music</a>
+        <a href="#">Gaming</a>
+        <a href="#">Live</a>
+        <a href="#">Goalkeepers</a>
+        <a href="#">4K resolution</a>
+        <a href="#">Parrots</a>
+        <a href="#">LaLiga</a>
+        <a href="#">Source code</a>
+        <a href="#">Computer programming</a>
+        <a href="#">Computer</a>
+        <a href="#">Reverberation</a>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../material/youtube-thumbnail.jpg" width="300" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+                <img src="../material/bro-code.jpg" width="50" height="50" alt="">
+
+                <div class="content">
+                    <p class="title">Learn HTML in 1 hour</p>
+                    <p class="channel">Bro Code <i class="fa-solid fa-circle-check check"></i></p>
+                    <p class="views-and-time">2.4M views . 3 years ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
