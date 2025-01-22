@@ -12,6 +12,7 @@
             padding: 0;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
         }
 
         nav{
@@ -19,21 +20,27 @@
             justify-content: space-around;
             align-items: center;
             height: 70px;
+            flex-wrap: wrap;
+        }
+
+        a{
+            cursor: pointer;
         }
 
         .left, .right, .center{
             display: flex;
         }
 
-        .search{
-            margin-right: 0;
-        }
-
-        .search .glass{
+        .glass{
             margin-right: 10px;
             border-radius: 0 20px 20px 0;
             padding: 10px 20px;
             border: 1px solid rgb(199, 199, 199);
+        }
+
+        .search{
+            display: flex;
+
         }
 
         .search input{
@@ -144,6 +151,10 @@
 
         .check{
             font-size: 12px;
+        }
+
+        button, img{
+            cursor: pointer;
         }
     </style>
 </head>
