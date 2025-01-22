@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            position: relative;
+        }
+
+        .container div{
+            width: 200px;
+            height: 200px;
+        }
+
+        .red{
+            background-color: rgb(181 76 76);
+            top: 0;
+            left: 0;
+            z-index: 3;
+        }
+
+        .green{
+            background-color: rgb(76 181 76);
+            top: 120px;
+            left: 120px;
+            z-index: 2;
+        }
+
+        .blue{
+            background-color: rgb(76 76 181);
+            top: 60px;
+            left: 60px;
+            z-index: 1;
+        }
+
+        .abs{
+            position: absolute;
+        }
+
+        .red, .blue, .green{
+            opacity: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red abs">Top</div>
+        <div class="green abs">Middle</div>
+        <div class="blue abs">Bottom</div>
+    </div>
+</body>
+</html>

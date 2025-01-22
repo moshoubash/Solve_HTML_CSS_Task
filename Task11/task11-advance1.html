@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .item {
+        background-color: #e0e0e0;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      .sub-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+
+      .sub-item {
+        background-color: #c0c0c0;
+        border: 1px solid #aaa;
+        padding: 10px;
+      }
+
+      .sup-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">Item 1</div>
+      <div class="item sub-grid">
+        <div class="sub-item">Sub 1</div>
+        <div class="sub-item">Sub 2</div>
+        <div class="sub-item">Sub 3</div>
+        <div class="sub-item">Sub 4</div>
+      </div>
+      <div class="item sub-grid">
+        <div class="sub-item">Sub 1</div>
+        <div class="sub-item">Sub 2</div>
+        <div class="sub-item">Sub 3</div>
+        <div class="sub-item">Sub 4</div>
+      </div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item sup-grid">
+        <div class="sub-item">Sub 1</div>
+        <div class="sub-item">Sub 2</div>
+      </div>
+      <div class="item sub-grid">
+        <div class="sub-item">Sub 1</div>
+        <div class="sub-item">Sub 2</div>
+      </div>
+      <div class="item">Item 8</div>
+      <div class="item sub-grid">
+        <div class="sub-item">Sub 1</div>
+        <div class="sub-item">Sub 2</div>
+        <div class="sub-item">Sub 3</div>
+        <div class="sub-item">Sub 4</div>
+      </div>
+      <div class="item">Item 10</div>
+      <div class="item">Item 11</div>
+      <div class="item sub-grid">
+        <div class="sub-item">Sub 1</div>
+        <div class="sub-item">Sub 2</div>
+        <div class="sub-item">Sub 3</div>
+        <div class="sub-item">Sub 4</div>
+      </div>
+    </div>
+  </body>
+</html>

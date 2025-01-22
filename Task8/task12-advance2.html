@@ -21,6 +21,7 @@
             align-items: center;
             height: 70px;
             flex-wrap: wrap;
+            /* background-color: blue; */
         }
 
         a{
@@ -95,8 +96,9 @@
             align-items: center;
             padding: 0 10px;
             margin-top: 15px;
-            flex-wrap: wrap;
             justify-content: center;
+            width: 100%;
+            /* background-color: yellow; */
         }
 
         .categories a{
@@ -106,13 +108,14 @@
             text-decoration: none;
             background-color: #f2f2f2;
             border-radius: 10px;
-            margin: 5px 2px;
+            margin: 0 5px;
         }
 
         .container{
             padding: 20px 80px;
             display: flex;
             flex-wrap: wrap;
+            /* background-color: red; */
         }
 
         .card{
@@ -155,6 +158,39 @@
 
         button, img{
             cursor: pointer;
+        }
+
+        @media(max-width: 840px){
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .container, .categories{
+                justify-content: center;
+                max-width: 80%;
+            }
+
+            nav .left, .right{
+                display: none;
+            }
+
+            .micro{
+                display: none;
+            }
+            .center{
+                margin-top: 20px;
+            }
+
+            input, .categories{
+                width: 70% !important;
+            }
+            
+            .categories{
+                overflow-x: scroll;
+            }
         }
     </style>
 </head>

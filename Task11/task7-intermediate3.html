@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container, .content{
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: start;
+            padding-bottom: 50px;
+        }
+
+        .content div{
+            background-color: rgb(144 164 174);
+            width: fit-content;
+            padding: 10px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Main content
+        <div class="content">
+            <div>Grid item 1</div>
+            <div>Grid item 2</div>
+            <div>Grid item 3</div>
+            <div>Grid item 4</div>
+            <div>Grid item 5</div>
+            <div>Grid item 6</div>
+        </div>
+    </div>
+</body>
+</html>

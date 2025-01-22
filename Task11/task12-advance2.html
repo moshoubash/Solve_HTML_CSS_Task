@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 250px);
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            height: 300px;
+        }
+
+        img{
+            width: 120px;
+            height: 100px;
+        }
+
+        .card-title{
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card-desc{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        ul{
+            margin: 10px 0 10px 20px;
+            font-size: 12px;
+        }
+
+        button{
+            background-color: rgb(0 128 128);
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            padding: 5px;
+        }
+
+        .image{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-top">
+                <div class="image">
+                    <img src="../material/computer.jpg" alt="Computer image">
+                </div>
+                <p class="card-title">Computer Starter Kit</p>
+                <p class="card-desc">This is the best computer money can buy, if you don't have much money</p>
+                <ul>
+                    <li>Computer</li>
+                    <li>Monitor</li>
+                    <li>Keyboard</li>
+                    <li>Mouse</li>
+                </ul>
+            </div>
+            <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="card">
+            <div class="card-top">
+                <div class="image">
+                    <img src="../material/printer.jpg" alt="Printer Image">
+                </div>
+                <p class="card-title">Printer</p>
+                <p class="card-desc">Only capable of printing. ASCII art.</p>
+                <ul>
+                    <li>Paper and ink not included</li>
+                </ul>
+            </div>
+            <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="card">
+            <div class="card-top">
+                <div class="image">
+                    <img src="../material/printer.jpg" alt="Printer Image">
+                </div>
+                <p class="card-title">Printer 2</p>
+                <p class="card-desc">A la 1989.</p>
+            </div>
+            <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="card">
+            <div class="card-top">
+                <p class="card-title">Mouse</p>
+                <p class="card-desc">A computer mouse is a pointing device (hand control) that detects two-dimensional motion relative to surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface. Clickity Click!</p>
+            </div>
+            <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="card">
+            <div class="card-top">
+                <div class="image">
+                    <img src="../material/computer.jpg" alt="Computer image">
+                </div>
+                <p class="card-title">Macintosh 8500</p>
+                <p class="card-desc">This is the best computer money can buy, if you don't have much money. This computer was state of the art in 1995.</p>
+            </div>
+            <button class="btn">BUY NOW</button>
+        </div>
+    </div>
+</body>
+</html>
