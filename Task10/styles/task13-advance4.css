@@ -49,7 +49,7 @@ body{
 }
 
 .content{
-    background-image: url("../material/potato.png");
+    background-image: url("../../material/potato.png");
 
     display: flex;
     justify-content: center;
@@ -75,7 +75,7 @@ button{
 }
 
 .one{
-    background-image: url("../material/chef.png");
+    background-image: url("../../material/chef.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -87,7 +87,7 @@ button{
 }
 
 .two{
-    background-image: url("../material/specials.png");
+    background-image: url("../../material/specials.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -122,20 +122,20 @@ button{
     text-align: center;
 }
 
-.pro-one{
-    background-image: url("../material/cookie.png");
+.three-images .pro-one{
+    background-image: url("../../material/cookie.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pro-two{
-    background-image: url("../material/drinks.jpg");
+    background-image: url("../../material/drinks.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pro-three{
-    background-image: url("../material/pizza.png");
+    background-image: url("../../material/pizza.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
