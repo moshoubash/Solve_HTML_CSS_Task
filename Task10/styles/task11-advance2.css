@@ -1,0 +1,23 @@
+p{
+    height: 100px;
+    width: 300px;
+}
+
+.one{
+    border: 5px solid black;
+}
+.two{
+    border: 5px dotted black;
+}
+.three{
+    border: 5px dashed black;
+}
+.four{
+    border: 5px groove black;
+}
+.five{
+    border: 5px ridge black;
+}
+.six{
+    border: 5px double black;
+}

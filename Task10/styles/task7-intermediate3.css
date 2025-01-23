@@ -1,0 +1,6 @@
+p{
+    padding: 20px;
+    border: 20px solid transparent;
+    border-image: url("../material/background1.jpg") 30 round;
+    width: 400px;
+}

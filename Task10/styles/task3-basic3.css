@@ -1,0 +1,13 @@
+p{
+    font-size: 2rem;
+    width: 220px;
+}
+.ridge{
+    border: 5px ridge black;
+}
+.solid{
+    border: 5px solid black;
+}
+.double{
+    border: 5px double black;
+}
