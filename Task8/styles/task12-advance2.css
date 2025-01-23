@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+}
+
+a{
+    cursor: pointer;
+}
+
+.left, .right, .center{
+    display: flex;
+}
+
+.glass{
+    margin-right: 10px;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 20px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.search{
+    display: flex;
+
+}
+
+.search input{
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.list-btn{
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    margin-right: 10px;
+}
+
+.right{
+    background-color: none;
+}
+
+.bell{
+    margin: 0 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 1rem;
+}
+
+.create{
+    border-radius: 20px;
+    border: none;
+    padding: 0px 20px;
+}
+
+.glass, .micro, .create{
+    background-color: #f2f2f2;
+}
+
+.micro{
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+}
+
+.center{
+    align-items: center;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 15px;
+    justify-content: center;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.categories a{
+    padding: 10px 20px;
+    font-size: .8rem;
+    color: black;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.container{
+    padding: 20px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.card{
+    width: fit-content;
+    margin: 20px;
+}
+.card img{
+    border-radius: 10px;
+}
+
+.card-body{
+    display: flex;
+    margin-top: 5px;
+}
+
+.card-body img{
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.title{
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.channel{
+    color: gray;
+    margin: 1px 0;
+    font-size: 13px;
+}
+
+.views-and-time{
+    color: gray;
+    font-size: 13px;
+}
+
+.check{
+    font-size: 12px;
+}
+
+button, img{
+    cursor: pointer;
+}
+
+@media(max-width: 840px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .container, .categories{
+        justify-content: center;
+        max-width: 80%;
+    }
+
+    nav .left, .right{
+        display: none;
+    }
+
+    .micro{
+        display: none;
+    }
+    .center{
+        margin-top: 20px;
+    }
+
+    input, .categories{
+        width: 70% !important;
+    }
+    
+    .categories{
+        overflow-x: scroll;
+    }
+}

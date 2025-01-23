@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(139 0 139);
+    display: flex;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin:0 10px ;
+}

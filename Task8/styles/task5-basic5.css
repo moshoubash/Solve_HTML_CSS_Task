@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    background-color: rgb(77 114 152);
+    padding: 20px;
+    color: white;
+    border: 2px solid rgb(119 166 182);
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+}

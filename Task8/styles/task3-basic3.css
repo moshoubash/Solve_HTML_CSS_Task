@@ -1,0 +1,18 @@
+.box{
+    border-radius: 10px;
+    border: 1px solid rgb(77 114 152);
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: rgb(77 114 152);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 110px;
+    text-align: left;
+}
