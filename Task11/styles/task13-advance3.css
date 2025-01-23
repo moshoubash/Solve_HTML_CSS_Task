@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    margin: 10px 0;
+}
+
+main{
+    width: 80vh;
+}
+
+.right-nav{
+    display: grid;
+    grid-template-columns: repeat(8, 20px);
+    justify-content: right;
+}
+
+.right-nav i{
+    font-size: 1.2rem;
+    color: #323232;
+}
+.site-info h1{
+    font-family: "Yellowtail", serif;
+}
+
+.site-info p{
+    font-size: 7px;
+    color: gray;
+}
+
+.logo{
+    background-color: #323232;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+.left-nav{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+hr{
+    border-image: url("../material/border-image.jpg") 30 round;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.content{
+    margin: 20px 0;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 30px;
+    justify-content: end;
+    text-align: center;
+}
+
+h2{
+    font-family: fantasy;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.left p{
+    font-size: 13px;
+    color: gray;
+}
+
+.right{
+    color: gray;
+}
+
+.right p{
+    font-size: 10px;
+}
+
+.thumbnail img{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.article img{
+    margin: 20px 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.foot-left h3{
+    margin: 15px 0;
+}
+
+.foot-right button{
+    background-color: #d83a57;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 60px;
+}
+
+.copyright{
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    color: gray;
+}
+
+.copyright i{
+    background-color: gray;
+}
+
+.mg{
+    margin: 10px 0;
+}
+
+.article{
+    color: gray;
+}
+
+/* .checklist{
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+
+    width: 100%;
+} */
+
+.article img{
+    width: 100%;
+}
