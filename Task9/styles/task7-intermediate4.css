@@ -1,0 +1,25 @@
+img{
+    border-radius: 20px;
+    position: absolute;
+}
+
+.one{
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.two{
+    top: 30px;
+    left: 30px;
+}
+
+.three{
+    top: 50px;
+    left: 50px;
+}
+
+.four{
+    top: 70px;
+    left: 70px;
+}
