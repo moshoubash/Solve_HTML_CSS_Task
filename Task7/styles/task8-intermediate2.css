@@ -1,0 +1,28 @@
+p{
+    width: 500px;
+    height: 70px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+.visible{
+    background-color: rgb(255 127 80);
+    overflow: visible;
+}
+.hidden{
+    background-color: #000000;
+    color: white;
+    overflow: hidden;
+}
+.scroll{
+    background-color: rgb(7 214 246);
+    overflow: scroll;
+}
+.auto{
+    background-color: rgb(170 16 172);
+    overflow: auto;
+}
+.x-and-y{
+    background-color: rgb(3 160 11);
+    overflow-x: auto;
+    overflow-y: scroll;
+}
