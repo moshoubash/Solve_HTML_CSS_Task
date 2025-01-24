@@ -18,6 +18,17 @@ body{
     align-items: center;
     height: 100px;
     color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.nav{
+    position: relative;
+}
+
+.navbar.scrolled{
+    background: linear-gradient(177deg, rgba(101,138,142,1) 0%, rgba(126,134,139,1) 100%);
+    z-index: 1000;
 }
 
 .navbar h1{
@@ -173,10 +184,11 @@ body{
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    height: 500px;
 }
-
 .video iframe{
-    align-self: self-start;
+    height: 100%;
+    width: 1000px;
 }
 
 .black{
